@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agrega una Carta</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
+    </head>
+    <body>
+        <h1>Agrega un carta</h1>
+        <form method="POST" action='/enviarInfox'>
+            <div class="container">
+                <div class="form-control">
+                    <input type="number" class="form-control" placeholder="Ingrese datos" id="numeracion" name="numeracion">
+                    <label class="form-label">Numeracion</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" class="form-control" id="color" name="colo" placeholder="Ingrese datos">
+                    <label class="form-label" >Color</label>
+                </div>
+                
+                <div class="form-control">
+                    <input  class="form-control" id="palo" name="palo" placeholder="Ingrese datos">
+                    <label class="form-label">Palo</label>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-6">
+                        <input type="reset" class="btn btn-secondary mx-2 my-2">
+                        <input type="submit" class="btn btn-primary mx-2 my-2">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>

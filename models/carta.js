@@ -2,7 +2,7 @@ const mongo = require("mongoose")
 
 const BarajaSchema = mongo.Schema({
     numeracion: {
-      type: Number,
+      type: String,
       required: true
     },
     color: {

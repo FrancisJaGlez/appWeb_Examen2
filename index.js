@@ -23,7 +23,7 @@ app.use("/baraja",Routes);
 
 //Que la aplicación escuche peticiones
 Mongo.connect(`mongodb://localhost:27017/baraja`)
-  .then(app.listen(8080,()=>{
+  .then(console.log("Conexion a BD exitosa")
+  ,app.listen(8080,()=>{
     console.log("Aplicación web en línea localhost:8080")
-  })
-  .catch(err=>console.log(err))
+  })).catch(error=>{console.log(error)})
